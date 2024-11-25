@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>More than human | Project focused on personal growth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/mth/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/wp-content/themes/mth/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/wp-content/themes/mth/assets/favicon/favicon-16x16.png">
+    <script type="text/javascript">
+        window.template_url = "/wp-content/themes/mth";
+    </script>
+    <meta name='robots' content='max-image-preview:large' />
+    <style>
+        img:is([sizes="auto"i], [sizes^="auto,"i]) {
+            contain-intrinsic-size: 3000px 1500px
+        }
+    </style>
+    <script type="text/javascript">
+        window._wpemojiSettings = {
+            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
+            "ext": ".png",
+            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/",
+            "svgExt": ".svg",
+            "source": {
+                "concatemoji": "https:\/\/morethanhuman.be\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1"
+            }
+        };
+        ! function (i, n) {
+            var o, s, e;
+
+            function c(e) {
+                try {
+                    var t = {
+                        supportTests: e,
+                        timestamp: (new Date).valueOf()
+                    };
+                    sessionStorage.setItem(o, JSON.stringify(t))
+                } catch (e) {}
+            }
+
+            function p(e, t, n) {
+                e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+                var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
+                    r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e
+                        .getImageData(0, 0, e.canvas.width, e.canvas.height).data));
+                return t.every(function (e, t) {
+                    return e === r[t]
+                })
+            }
+
+            function u(e, t, n) {
+                switch (t) {
+                    case "flag":
+                        return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !
+                            1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e,
+                                "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
+                                "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
+                                );
+                    case "emoji":
+                        return !n(e, "\ud83d\udc26\u200d\u2b1b", "\ud83d\udc26\u200b\u2b1b")
+                }
+                return !1
+            }
+
+            function f(e, t, n) {
+                var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ?
+                    new OffscreenCanvas(300, 150) : i.createElement("canvas"),
+                    a = r.getContext("2d", {
+                        willReadFrequently: !0
+                    }),
+                    o = (a.textBaseline = "top", a.font = "600 32px Arial", {});
+                return e.forEach(function (e) {
+                    o[e] = t(a, e, n)
+                }), o
+            }
+
+            function t(e) {
+                var t = i.createElement("script");
+                t.src = e, t.defer = !0, i.head.appendChild(t)
+            }
+            "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = {
+                everything: !0,
+                everythingExceptFlag: !0
+            }, e = new Promise(function (e) {
+                i.addEventListener("DOMContentLoaded", e, {
+                    once: !0
+                })
+            }), new Promise(function (t) {
+                var n = function () {
+                    try {
+                        var e = JSON.parse(sessionStorage.getItem(o));
+                        if ("object" == typeof e && "number" == typeof e.timestamp && (new Date)
+                            .valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests)
+                            return e.supportTests
+                    } catch (e) {}
+                    return null
+                }();
+                if (!n) {
+                    if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas &&
+                        "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob)
+                    try {
+                        var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(),
+                                p.toString()
+                            ].join(",") + "));",
+                            r = new Blob([e], {
+                                type: "text/javascript"
+                            }),
+                            a = new Worker(URL.createObjectURL(r), {
+                                name: "wpTestEmojiSupports"
+                            });
+                        return void(a.onmessage = function (e) {
+                            c(n = e.data), a.terminate(), t(n)
+                        })
+                    } catch (e) {}
+                    c(n = f(s, u, p))
+                }
+                t(n)
+            }).then(function (e) {
+                for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n
+                    .supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports
+                        .everythingExceptFlag && n.supports[t]);
+                n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n
+                    .DOMReady = !1, n.readyCallback = function () {
+                        n.DOMReady = !0
+                    }
+            }).then(function () {
+                return e
+            }).then(function () {
+                var e;
+                n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e
+                    .concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)))
+            }))
+        }((window, document), window._wpemojiSettings);
+    </script>
+    <style id='wp-emoji-styles-inline-css' type='text/css'>
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 0.07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important
+        }
+    </style>
+    <link rel='stylesheet' id='wp-block-library-css' href='/wp-includes/css/dist/block-library/style.min.css?ver=6.7.1'
+        type='text/css' media='all' />
+    <style id='classic-theme-styles-inline-css' type='text/css'>
+        .wp-block-button__link {
+            color: #fff;
+            background-color: #32373c;
+            border-radius: 9999px;
+            box-shadow: none;
+            text-decoration: none;
+            padding: calc(.667em + 2px) calc(1.333em + 2px);
+            font-size: 1.125em
+        }
+
+        .wp-block-file__button {
+            background: #32373c;
+            color: #fff;
+            text-decoration: none
+        }
+    </style>
+    <style id='global-styles-inline-css' type='text/css'>
+        :root {
+            --wp--preset--aspect-ratio--square: 1;
+            --wp--preset--aspect-ratio--4-3: 4/3;
+            --wp--preset--aspect-ratio--3-4: 3/4;
+            --wp--preset--aspect-ratio--3-2: 3/2;
+            --wp--preset--aspect-ratio--2-3: 2/3;
+            --wp--preset--aspect-ratio--16-9: 16/9;
+            --wp--preset--aspect-ratio--9-16: 9/16;
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+            --wp--preset--spacing--20: 0.44rem;
+            --wp--preset--spacing--30: 0.67rem;
+            --wp--preset--spacing--40: 1rem;
+            --wp--preset--spacing--50: 1.5rem;
+            --wp--preset--spacing--60: 2.25rem;
+            --wp--preset--spacing--70: 3.38rem;
+            --wp--preset--spacing--80: 5.06rem;
+            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+            --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1)
+        }
+
+        :where(.is-layout-flex) {
+            gap: 0.5em
+        }
+
+        :where(.is-layout-grid) {
+            gap: 0.5em
+        }
+
+        body .is-layout-flex {
+            display: flex
+        }
+
+        .is-layout-flex {
+            flex-wrap: wrap;
+            align-items: center
+        }
+
+        .is-layout-flex>:is(*, div) {
+            margin: 0
+        }
+
+        body .is-layout-grid {
+            display: grid
+        }
+
+        .is-layout-grid>:is(*, div) {
+            margin: 0
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em
+        }
+
+        :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em
+        }
+
+        :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em
+        }
+
+        :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important
+        }
+
+        :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em
+        }
+
+        :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em
+        }
+
+        :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em
+        }
+
+        :root:where(.wp-block-pullquote) {
+            font-size: 1.5em;
+            line-height: 1.6
+        }
+    </style>
+    <link rel='stylesheet' id='contact-form-7-css'
+        href='/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.9.8' type='text/css' media='all' />
+    <link rel='stylesheet' id='app-css' href='/wp-content/themes/mth/assets/dist/bundle.css?s=1732552654&#038;ver=6.7.1'
+        type='text/css' media='all' />
+    <link rel="https://api.w.org/" href="/wp-json/" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+    <meta name="generator" content="WordPress 6.7.1" />
+
+    <style>
+
+.social svg {
+    width: 20px;
+    height: auto;
+}
+.social {
+    position: fixed;
+    top: 0;
+    right: 87px;
+    display: flex ;
+    height: 78px !important;
+    align-items: center;
+    margin-right:20px ;
+    margin-top:20px ;
+    z-index: 111;
+}
+.social a {
+    padding: 12px;
+    --aug-border-bg: hsla(0, 0%, 100%, 0.25);
+    border: 1px solid #4b4b54;
+    background: rgb(100 101 183 / 15%);
+    margin-right: 10px;
+}
+    </style>
+</head>
+
+<body class="home blog">
+    <div class="loading"> <svg width="202px" height="17px" viewBox="0 0 202 17" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <title>Combined Shape</title>
+            <defs>
+                <radialGradient gradientUnits="userSpaceOnUse" cx="0%" cy="0%" fx="0%" fy="0%" r="670.545864%"
+                    gradientTransform="translate(101.00000,0.500000),scale(0.079602,1.000000),rotate(97.762790),translate(-0.500000,-0.500000)"
+                    id="radialGradient-1">
+                    <stop stop-color="#DA7317" offset="0%"></stop>
+                    <stop stop-color="#000" offset="100%"></stop>
+                </radialGradient>
+            </defs>
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.403529576"
+                stroke-linecap="square">
+                <g id="2.WORK" transform="translate(-720.000000, -723.000000)" stroke="url(#radialGradient-1)">
+                    <g id="Group-3" transform="translate(720.500000, 723.500000)">
+                        <line x1="0.5" y1="1.11022302e-16" x2="0.5" y2="16" id="Line"></line>
+                        <line x1="8.5" y1="1.11022302e-16" x2="8.5" y2="16" id="Line"></line>
+                        <line x1="16.5" y1="1.11022302e-16" x2="16.5" y2="16" id="Line"></line>
+                        <line x1="24.5" y1="1.11022302e-16" x2="24.5" y2="16" id="Line"></line>
+                        <line x1="32.5" y1="1.11022302e-16" x2="32.5" y2="16" id="Line"></line>
+                        <line x1="40.5" y1="1.11022302e-16" x2="40.5" y2="16" id="Line"></line>
+                        <line x1="48.5" y1="1.11022302e-16" x2="48.5" y2="16" id="Line"></line>
+                        <line x1="56.5" y1="1.11022302e-16" x2="56.5" y2="16" id="Line"></line>
+                        <line x1="64.5" y1="1.11022302e-16" x2="64.5" y2="16" id="Line"></line>
+                        <line x1="72.5" y1="1.11022302e-16" x2="72.5" y2="16" id="Line"></line>
+                        <line x1="80.5" y1="1.11022302e-16" x2="80.5" y2="16" id="Line"></line>
+                        <line x1="88.5" y1="1.11022302e-16" x2="88.5" y2="16" id="Line"></line>
+                        <line x1="96.5" y1="1.11022302e-16" x2="96.5" y2="16" id="Line"></line>
+                        <line x1="104.5" y1="1.11022302e-16" x2="104.5" y2="16" id="Line"></line>
+                        <line x1="112.5" y1="1.11022302e-16" x2="112.5" y2="16" id="Line"></line>
+                        <line x1="120.5" y1="1.11022302e-16" x2="120.5" y2="16" id="Line"></line>
+                        <line x1="128.5" y1="1.11022302e-16" x2="128.5" y2="16" id="Line"></line>
+                        <line x1="136.5" y1="1.11022302e-16" x2="136.5" y2="16" id="Line"></line>
+                        <line x1="144.5" y1="1.11022302e-16" x2="144.5" y2="16" id="Line"></line>
+                        <line x1="152.5" y1="1.11022302e-16" x2="152.5" y2="16" id="Line"></line>
+                        <line x1="160.5" y1="1.11022302e-16" x2="160.5" y2="16" id="Line"></line>
+                        <line x1="168.5" y1="1.11022302e-16" x2="168.5" y2="16" id="Line"></line>
+                        <line x1="176.5" y1="1.11022302e-16" x2="176.5" y2="16" id="Line"></line>
+                        <line x1="184.5" y1="1.11022302e-16" x2="184.5" y2="16" id="Line"></line>
+                        <line x1="192.5" y1="1.11022302e-16" x2="192.5" y2="16" id="Line"></line>
+                        <line x1="200.5" y1="1.11022302e-16" x2="200.5" y2="16" id="Line"></line>
+                    </g>
+                </g>
+            </g>
+        </svg></div>
+    <div class="scrollbar">
+        <div class="scrollbar__progress"> <img src="/wp-content/themes/mth/assets/images/scrollbar.png" alt=""
+                class="img-fluid" /> </div>
+    </div>
+    <div id="canvas"></div>
+    <div id="main-op" class="message-box aug-border-yellow-500"
+        data-augmented-ui="border tl-2-clip-x br-2-clip-x --aug-border-bg">
+        <div class="message-box__wrapper">
+            <div class="message-box__chapter">
+                <h3 class="mt-0">The Start of the Journey</h3>
+                <p>Once upon a time, a man who had lost the strength to fight, the hardships of everyday life had eroded
+                    his spirit, leaving him devoid of hope. One day, he met an old man who told him about an ancient
+                    pilgrimage, known for transforming those who undertook it, forging their character.</p>
+                <h3>The Road to Rebirth</h3>
+                <p>Along the way, he was put to the test and often felt overwhelmed. However, whenever he was on the
+                    verge of giving up, he remembered the old man’s words: "It is through suffering that you will find
+                    your strength." As the days passed, the man began to notice an increase in his endurance, and with
+                    it, his ability to face difficulties.</p>
+                <h3>The Peak of Fear</h3>
+                <p>One day, he found himself facing a high mountain. Looking at the peak, he was overwhelmed by doubt
+                    and fear. Instead of stopping, he began to climb, step by step. Each step reminded him of the
+                    challenges he had overcome and the strength he was rediscovering within himself. When he finally
+                    reached the summit, he reflected on the climb he had just completed and realized that true strength
+                    did not lie in avoiding difficulties, but in facing and overcoming them.</p>
+                <h3>Rediscovered Resilience</h3>
+                <p>Reinvigorated by this new awareness, he completed the pilgrimage. With the resilience forged during
+                    the journey, he faced new life challenges with renewed determination. The difficulties did not
+                    disappear, but he now knew how to tackle them, step by step, with the understanding that he
+                    possessed the inner strength to overcome them.</p>
+            </div>
+        </div> <a class="message-box__close" href="javascript:void(0);">X</a>
+    </div>
+    <div class="message-box-small aug-border-yellow-500"
+        data-augmented-ui="border tl-2-clip-x br-2-clip-x --aug-border-bg">
+        <div class="message-box-small__wrapper">
+            <h3>Become the best version of yourself</h3>
+            <p>Embark on the path to becoming stronger, face your challenges and difficulties with determination,
+                develop yourself through the practice of discipline and foster social connections to enhance your
+                empathy.</p>
+            <div class="text-end"> <a class="message-box-small__enter" href="javascript:void(0);">Enter</a> </div>
+        </div>
+    </div>
+    <div class="message-box-info aug-border-yellow-500"
+        data-augmented-ui="border tl-2-clip-x br-2-clip-x --aug-border-bg">
+        <div class="message-box-info__wrapper">
+            <h3>BeAIng Human</h3>
+            <p>Bridges the worlds of artificial intelligence and blockchain, creating a seamless fusion of human ingenuity and machine precision. At its core, this project redefines how we interact with technology, empowering users to explore a cryptic yet intuitive digital ecosystem that learns, adapts, and evolves with them.</p>
+
+            <p>Our platform harnesses the power of advanced AI to decode complexities, offering real-time insights, predictive analytics, and autonomous solutions. Paired with the transparency and security of blockchain, BeAIng Human stands as a revolutionary tool for creators, traders, and innovators.</p>
+            <p>
+                Driven by the philosophy that humanity and AI should complement, not compete, BeAIng Human is a beacon of collaboration, guiding us toward a future where technology amplifies our capacity to think, create, and thrive.
+            </p>
+            <h3>Welcome to the next chapter of evolution—where humans and AI become one."</h3>
+            <div style="display: none;" class="wpcf7 no-js" id="wpcf7-f5-o1" lang="it-IT" dir="ltr">
+                <div class="screen-reader-response">
+                    <p role="status" aria-live="polite" aria-atomic="true"></p>
+                    <ul></ul>
+                </div>
+                <form action="/#wpcf7-f5-o1" method="post" class="wpcf7-form init" aria-label="Modulo di contatto"
+                    novalidate="novalidate" data-status="init">
+                    <div style="display: none;"><input type="hidden" name="_wpcf7" value="5" /><input type="hidden"
+                            name="_wpcf7_version" value="5.9.8" /><input type="hidden" name="_wpcf7_locale"
+                            value="it_IT" /><input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f5-o1" /><input
+                            type="hidden" name="_wpcf7_container_post" value="0" /><input type="hidden"
+                            name="_wpcf7_posted_data_hash" value="" /></div>
+                    <div class="message-box-info__form-wrap"><span class="wpcf7-form-control-wrap"
+                            data-name="your-email"><input size="40" maxlength="400"
+                                class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email message-box-info__mail"
+                                aria-required="true" aria-invalid="false" placeholder="Your email" value="" type="email"
+                                name="your-email" /></span>
+                        <div class="message-box-info__enter-wrap"><input
+                                class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Invia" /></div>
+                    </div>
+                    <div class="policy-ct"> <span class="wpcf7-form-control-wrap" data-name="your-consent"><span
+                                class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input
+                                            type="checkbox" name="your-consent" value="1" aria-invalid="false" /><span
+                                            class="wpcf7-list-item-label">I have read and accept the <a
+                                                href="/privacy-policy" target="_blank">Privacy Policy</a> (GDPR
+                                            679/2016).</span></label></span></span></span> </div>
+                    <div class="wpcf7-response-output" aria-hidden="true"></div>
+                </form>
+            </div>
+        </div> <a class="message-box-info__close" href="javascript:void(0);">X</a>
+    </div>
+    <div class="d-none chapters">
+        <div class="chapter-1">
+            <h3 class="mt-0">The Start of the Journey</h3>
+            <p>Once upon a time, there was a man who had lost the strength to fight. The hardships of everyday life had
+                eroded his spirit, leaving him devoid of hope. One day, he met an old man who told him about an ancient
+                pilgrimage known for transforming those who undertook it and forging their character.</p>
+            <h3>The Road to Rebirth</h3>
+            <p>Along the way, he faced numerous tests and often felt overwhelmed. However, whenever he was on the verge
+                of giving up, he remembered the old man’s words: “It is through suffering that you will find your
+                strength." As the days passed, he began to notice an increase in his endurance and, with it, a growing
+                ability to face difficulties.</p>
+            <h3>The Peak of Fear</h3>
+            <p>One day, he found himself facing a towering mountain. As he looked at the summit, he was overwhelmed by
+                doubt and fear. Instead of stopping, he began to climb, step by step. Each step reminded him of the
+                challenges he had overcome and the strength he was rediscovering within himself. When he finally reached
+                the top, he reflected on the climb he had just completed and realized that true strength lay not in
+                avoiding difficulties but in facing and overcoming them.</p>
+            <h3>Renewed Resilience</h3>
+            <p>Reinvigorated by this newfound awareness, he completed the pilgrimage. With the resilience forged during
+                the journey, he faced new life challenges with renewed determination. The difficulties did not
+                disappear, but he now knew how to tackle them step by step, with the understanding that he possessed the
+                inner strength to overcome them.</p>
+        </div>
+        <div class="chapter-2"></div>
+            <h3 class="mt-0">The Paradox of the Prodigy</h3>
+            <p>Once, there was a boy known for his remarkable/extraordinary talent. From a young age, he demonstrated
+                natural ability and was widely regarded as exceptional. However, he lacked discipline and consistency.
+                When given an opportunity to change his life, he arrived unprepared due to his shortcomings and failed
+                the challenge. His talent alone could not compensate for his lack of commitment.</p>
+            <h3>Dedication and Hard work</h3>
+            <p>He realized that discipline was a cornerstone of success. Therefore, he decided to change his attitude,
+                focus, and commitment. He began waking up at dawn, spending hours improving himself, and studying every
+                day to become stronger, faster, and more determined. After months of hard work, he was given a second
+                chance, and this time he was ready.</p>
+            <h3>Beyond Talent</h3>
+            <p>His transformation was evident: his natural ability now shone along with his resilience, focus, and
+                determination. He succeeded in his endeavor, and he was not only pleased with the success he had
+                achieved but also proud of the journey he had undertaken. He learned that talent is just one part of
+                success, and that commitment, dedication, and hard work are essential to achieving one’s dreams.</p>
+        </div>
+        <div class="chapter-3">
+            <h3 class="mt-0">Glimpses of Indifference</h3>
+            <p>A woman was traveling through the mountains when she twisted her ankle and found herself unable to move.
+                By chance, a man passed by on the same path; although he saw her, he continued on without stopping.
+                Shortly afterward, another man arrived at the same spot, and like the first, he too passed by without
+                offering assistance.</p>
+            <h3>The one who makes the difference</h3>
+            <p>A third man passed by and felt compassion. He approached her and tried to help, but the sprain was too
+                severe for her to walk. Determined not to leave her there, he enlisted the help of another traveler.
+                Together, they took turns carrying her on their backs and brought her to the nearest shelter.</p>
+            <h3>The power of humanity</h3>
+            <p>Reflecting on the woman’s gratitude, the man felt a profound change within himself. A deep and complete
+                inner peace filled him, allowing him to fully appreciate the value of altruism. The woman then reflected
+                on the actions of the different men. She realized that the kindness of the third traveler had saved her.
+                She understood that altruism was not merely a gesture, but a gift that could transform a person’s life.
+                From that moment on, she decided to dedicate part of her time to helping others, inspired by the man’s
+                example.</p>
+        </div>
+    </div>
+    <div class="scroll-down"><span>Scroll</span> <span>to</span> <span>explore</span></div>
+        <div class="social">
+
+            <a href="#x#">
+                <svg style="color: white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" version="1.1"> <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="white"></path> </svg>
+            </a>
+
+            <a  href="#x#"><svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="800px" height="800px" viewBox="0 0 24 24" role="img" stroke="#ffffff">
+
+                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                
+                <g id="SVGRepo_iconCarrier">
+                
+                <title>Telegram icon</title>
+                
+                <path d="M23.91 3.79L20.3 20.84c-.25 1.21-.98 1.5-2 .94l-5.5-4.07-2.66 2.57c-.3.3-.55.56-1.1.56-.72 0-.6-.27-.84-.95L6.3 13.7l-5.45-1.7c-1.18-.35-1.19-1.16.26-1.75l21.26-8.2c.97-.43 1.9.24 1.53 1.73z"/>
+                
+                </g>
+                
+                </svg></a>
+        </div>
+    
+    <a href="javascript:void(0);"
+        class="test info">
+        <div class="position-relative"> <svg class="info-normal" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="1130" height="1130" viewBox="0 0 1130 1130">
+                <defs>
+                    <filter id="a-normal" width="260%" height="260%" x="-80%" y="-80%" filterUnits="objectBoundingBox">
+                        <feMorphology in="SourceAlpha" operator="dilate" radius="20" result="shadowSpreadOuter1" />
+                        <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1" />
+                        <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="20" />
+                        <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0" />
+                    </filter>
+                    <filter id="c-normal" width="340%" height="135.6%" x="-120%" y="-17.8%"
+                        filterUnits="objectBoundingBox">
+                        <feMorphology in="SourceAlpha" operator="dilate" radius="20" result="shadowSpreadOuter1" />
+                        <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1" />
+                        <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="20" />
+                        <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0" />
+                    </filter>
+                    <filter id="e-normal" width="111.4%" height="111.4%" x="-5.7%" y="-5.7%"
+                        filterUnits="objectBoundingBox">
+                        <feMorphology in="SourceAlpha" operator="dilate" radius="20" result="shadowSpreadOuter1" />
+                        <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1" />
+                        <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="20" />
+                        <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0" />
+                    </filter>
+                    <path id="b"
+                        d="M525 362.5c-21.25 0-37.5-16.25-37.5-37.5s16.25-37.5 37.5-37.5 37.5 16.25 37.5 37.5-16.25 37.5-37.5 37.5Z" />
+                    <path id="d"
+                        d="M525 762.5c-13.75 0-25-11.25-25-25V450c0-13.75 11.25-25 25-25s25 11.25 25 25v287.5c0 13.75-11.25 25-25 25Z" />
+                    <path id="f"
+                        d="M525 1050C235 1050 0 815 0 525S235 0 525 0s525 235 525 525-235 525-525 525Zm0-1000C262.5 50 50 262.5 50 525s212.5 475 475 475 475-212.5 475-475S787.5 50 525 50Z" />
+                </defs>
+                <g fill="none" fill-rule="nonzero">
+                    <g transform="translate(40 40)">
+                        <use xlink:href="#b" fill="#000" filter="url(#a-normal)" />
+                        <use xlink:href="#b" fill="#FFF" />
+                    </g>
+                    <g transform="translate(40 40)">
+                        <use xlink:href="#d" fill="#000" filter="url(#c-normal)" />
+                        <use xlink:href="#d" fill="#FFF" />
+                    </g>
+                    <g transform="translate(40 40)">
+                        <use xlink:href="#f" fill="#000" filter="url(#e-normal)" />
+                        <use xlink:href="#f" fill="#FFF" />
+                    </g>
+                </g>
+            </svg> <svg class="info-hover" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="1110" height="1110" viewBox="0 0 1110 1110">
+                <defs>
+                    <filter id="a-hover" width="108.6%" height="108.6%" x="-4.3%" y="-4.3%"
+                        filterUnits="objectBoundingBox">
+                        <feMorphology in="SourceAlpha" operator="dilate" radius="5" result="shadowSpreadOuter1" />
+                        <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1" />
+                        <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10" />
+                        <feColorMatrix in="shadowBlurOuter1"
+                            values="0 0 0 0 0.960784314 0 0 0 0 0.396078431 0 0 0 0 0.0156862745 0 0 0 0.5 0" />
+                    </filter>
+                    <filter id="c-hover" width="280%" height="126.7%" x="-90%" y="-13.3%"
+                        filterUnits="objectBoundingBox">
+                        <feMorphology in="SourceAlpha" operator="dilate" radius="5" result="shadowSpreadOuter1" />
+                        <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1" />
+                        <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10" />
+                        <feColorMatrix in="shadowBlurOuter1"
+                            values="0 0 0 0 0.960784314 0 0 0 0 0.396078431 0 0 0 0 0.0156862745 0 0 0 0.5 0" />
+                    </filter>
+                    <filter id="e-hover" width="220%" height="220%" x="-60%" y="-60%" filterUnits="objectBoundingBox">
+                        <feMorphology in="SourceAlpha" operator="dilate" radius="5" result="shadowSpreadOuter1" />
+                        <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1" />
+                        <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10" />
+                        <feColorMatrix in="shadowBlurOuter1"
+                            values="0 0 0 0 0.960784314 0 0 0 0 0.396078431 0 0 0 0 0.0156862745 0 0 0 0.5 0" />
+                    </filter>
+                    <path id="b-hover"
+                        d="M525 1050C235 1050 0 815 0 525S235 0 525 0s525 235 525 525-235 525-525 525Zm0-1000C262.5 50 50 262.5 50 525s212.5 475 475 475 475-212.5 475-475S787.5 50 525 50Z" />
+                    <path id="d-hover"
+                        d="M525 762.5c-13.75 0-25-11.25-25-25V450c0-13.75 11.25-25 25-25s25 11.25 25 25v287.5c0 13.75-11.25 25-25 25Z" />
+                    <path id="f-hover"
+                        d="M525 362.5c-21.25 0-37.5-16.25-37.5-37.5s16.25-37.5 37.5-37.5 37.5 16.25 37.5 37.5-16.25 37.5-37.5 37.5Z" />
+                </defs>
+                <g fill="none" fill-rule="nonzero">
+                    <g transform="translate(30 30)">
+                        <use xlink:href="#b-hover" fill="#000" filter="url(#a-hover)" />
+                        <use xlink:href="#b-hover" fill="#F56504" />
+                    </g>
+                    <g transform="translate(30 30)">
+                        <use xlink:href="#d-hover" fill="#000" filter="url(#c-hover)" />
+                        <use xlink:href="#d-hover" fill="#F56504" />
+                    </g>
+                    <g transform="translate(30 30)">
+                        <use xlink:href="#f-hover" fill="#000" filter="url(#e-hover)" />
+                        <use xlink:href="#f-hover" fill="#F56504" />
+                    </g>
+                </g>
+            </svg> </div>
+    </a><a target="_blank" href="https://www.aboutluca.com/" class="credits">credits</a><a class="audio"
+        href="javascript:void(0);"> <svg width="1051px" height="896px" viewBox="0 0 1051 896" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="noun-audio-6845695" transform="translate(0.000000, 0.676875)" fill="#000000" fill-rule="nonzero">
+                    <path fill="#FFF"
+                        d="M636.56,2.43312456 C630.6538,-0.894975442 623.435,-0.801275442 617.669,2.66750456 L203.009,251.907505 L44.109,251.907505 C19.781,251.907505 0.047,271.641505 -5.68434189e-14,296.016505 L-5.68434189e-14,598.646505 C0.046875,622.974505 19.781,642.708505 44.109,642.755505 L203.009,642.755505 L617.669,891.995505 C623.4346,895.370505 630.607,895.417405 636.466,892.089255 C642.3254,888.808055 645.9816,882.620455 646.0754,875.917255 L646.0754,18.7572546 C646.0754,12.0072546 642.4192,5.77325456 636.5598,2.44525456 L636.56,2.43312456 Z M37.5,598.643125 L37.5,296.013125 C37.5,292.356925 40.4531,289.403725 44.1094,289.403725 L189.4694,289.403725 L189.4694,605.243725 L44.1094,605.243725 C40.4532,605.243725 37.5,602.290625 37.5,598.634325 L37.5,598.643125 Z M608.58,842.773125 L226.97,613.413125 L226.97,281.253125 L608.58,51.8931246 L608.58,842.773125 Z"
+                        id="Shape"></path>
+                    <g class="audio-on" fill="#FFF" id="path-on" transform="translate(717.849800, 249.693125)">
+                        <path
+                            d="M313.4502,94.69 C308.4814,94.69 303.7002,96.6588 300.1842,100.1744 C296.6686,103.69 294.6998,108.4713 294.6998,113.4404 L294.6998,281.8104 C294.6998,292.1694 303.0904,300.5604 313.4498,300.5604 C323.8088,300.5604 332.1998,292.1698 332.1998,281.8104 L332.1998,113.4404 C332.1998,108.4716 330.231,103.6904 326.7154,100.1744 C323.1998,96.6588 318.4185,94.69 313.4494,94.69 L313.4502,94.69 Z"
+                            id="Path"></path>
+                        <path
+                            d="M215.1502,42.0992002 C210.1814,42.053125 205.4002,44.0688 201.8842,47.5844 C198.3682,51.1 196.3998,55.8344 196.3998,60.8504 L196.3998,334.4104 C196.3998,344.7694 204.7904,353.1604 215.1498,353.1604 C225.5092,353.1604 233.8998,344.7698 233.8998,334.4104 L233.8998,60.8504 C233.8998,55.8348 231.931,51.1004 228.4154,47.5844 C224.8998,44.0684 220.1185,42.0532 215.1494,42.0992002 L215.1502,42.0992002 Z"
+                            id="Path"></path>
+                        <path
+                            d="M116.9402,0 C111.9714,0 107.2371,1.9688 103.7212,5.4844 C100.1587,9 98.19,13.7813 98.19,18.7504 L98.19,376.4904 C98.19,386.8494 106.5806,395.2404 116.94,395.2404 C127.2994,395.2404 135.69,386.8498 135.69,376.4904 L135.69,18.7504 C135.69,13.7816 133.7212,9.0004 130.2056,5.4844 C126.69,1.9684 121.9087,0 116.9396,0 L116.9402,0 Z"
+                            id="Path"></path>
+                        <path
+                            d="M18.7502,94.69 C13.7814,94.69 9.0471,96.6588 5.5312,100.1744 C2.0153,103.69 0,108.4713 0,113.4404 L0,281.8104 C0,292.1694 8.4375,300.5604 18.75,300.5604 C29.109,300.5604 37.5,292.1698 37.5,281.8104 L37.5,113.4404 C37.5,108.4716 35.5312,103.6904 32.0156,100.1744 C28.5,96.6584 23.7656,94.69 18.7496,94.69 L18.7502,94.69 Z"
+                            id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </svg></a>
+    <script type="text/javascript" src="/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js">
+    </script>
+    <script type="text/javascript" src="/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js">
+    </script>
+    <script type="text/javascript" id="wp-i18n-js-after">
+        wp.i18n.setLocaleData({
+            'text direction\u0004ltr': ['ltr']
+        });
+    </script>
+    <script type="text/javascript" src="/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.9.8"
+        id="swv-js"></script>
+    <script type="text/javascript" id="contact-form-7-js-extra">
+        var wpcf7 = {
+            "api": {
+                "root": "https:\/\/morethanhuman.be\/wp-json\/",
+                "namespace": "contact-form-7\/v1"
+            }
+        };
+    </script>
+    <script type="text/javascript" id="contact-form-7-js-translations">
+        (function (domain, translations) {
+            var localeData = translations.locale_data[domain] || translations.locale_data.messages;
+            localeData[""].domain = domain;
+            wp.i18n.setLocaleData(localeData, domain);
+        })("contact-form-7", {
+            "translation-revision-date": "2024-08-13 15:55:30+0000",
+            "generator": "GlotPress\/4.0.1",
+            "domain": "messages",
+            "locale_data": {
+                "messages": {
+                    "": {
+                        "domain": "messages",
+                        "plural-forms": "nplurals=2; plural=n != 1;",
+                        "lang": "it"
+                    },
+                    "This contact form is placed in the wrong place.": [
+                        "Questo modulo di contatto \u00e8 posizionato nel posto sbagliato."
+                    ],
+                    "Error:": ["Errore:"]
+                }
+            },
+            "comment": {
+                "reference": "includes\/js\/index.js"
+            }
+        });
+    </script>
+    <script type="text/javascript" src="/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.9.8"
+        id="contact-form-7-js"></script>
+    <script type="text/javascript" src="/wp-content/themes/mth/assets/dist/bundle.js?s=1732552654&amp;ver=139"
+        id="bundle-js"></script>
+</body>
+
+</html>
